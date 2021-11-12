@@ -1,0 +1,101 @@
+[class*="col-"] {
+    width: 100%;
+}
+/* Header */
+.header-left ul li a,
+.header-right ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.788);
+}
+header{
+    display: flex; 
+    justify-content: space-between;
+    text-transform: uppercase;
+    
+}
+header li{
+    display: inline-block;
+}
+ .header-left{
+    margin: 20px 0 20px -10px;
+}
+.header-right{
+    margin: 20px 30px 20px 0;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 991.5px){
+    .nav-row{
+        background-color: rgba(17, 17, 48, 0.678);
+    }
+    .header-left ul li a,
+    .header-right ul li a{
+        color: white;
+    }
+    #banner{
+        opacity: 0;
+        height: 250px !important;
+    }
+    #banner-content1{
+        visibility: visible !important;
+        top: 30%;
+        left: 1%;
+        
+    }
+    #image-list,
+    #image-content,
+    #footer
+    {
+        background-color: #fff !important;
+    }
+    #image-content{
+        border-top: 1px solid rgba(0, 0, 0, 0.158);
+        
+    }
+}
+/* Banner */
+#banner-content1{
+    visibility: hidden;
+    position: absolute;
+}
+#banner{
+    /* background-image: url(./image/lodging.png); */
+    background-image: url(./image/IMG_0270.JPG);
+    height: 500px;
+    background-size: 100% 100%;
+    position: relative; 
+}
+
+#banner-content{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    color: white
+}
+#banner-content h1{
+    font-size: 60px;
+}
+#banner-content p{
+    font-size: 22px;
+}
+/*Image List*/
+#image-content,
+#image-list{
+background-color: rgba(0, 0, 0, 0.144);
+}
+#image-list img{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+.last-img{
+    height: 92.5% !important;
+    /* height: 91% !important; */
+}
+/*Footer*/
+#footer{
+    background-color: rgba(0, 0, 0, 0.055);
+}
+#footer a{
+    text-decoration: underline;
+}
